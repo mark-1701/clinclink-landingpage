@@ -31,7 +31,7 @@ const MultiStepModal = () => {
           formData.append('room_id', processObject?.room_id);
           formData.append('appointment_status_id', 1);
           // ! aqui debe de rellenarse con el id del login
-          formData.append('patient_id', 1);
+          formData.append('patient_id', 2);
           formData.append('doctor_id', processObject?.doctor_id);
           formData.append('start_timestamp', processObject?.start_timestamp);
           formData.append('end_timestamp', processObject?.end_timestamp);
