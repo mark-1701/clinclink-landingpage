@@ -48,7 +48,7 @@ export const SideBar = () => {
           </li>
 
           <li className="li">
-            <a href="https://clin-link-system.vercel.app/" className="link">
+            <a href="https://clin-link-system.vercel.app/register" className="link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
@@ -65,7 +65,7 @@ export const SideBar = () => {
           </li>
 
           <li className="li">
-            <a href="https://clin-link-system.vercel.app/register" className="link">
+            <a href="https://clin-link-system.vercel.app" className="link">
               <svg
                 className="fas"
                 xmlns="http://www.w3.org/2000/svg"
