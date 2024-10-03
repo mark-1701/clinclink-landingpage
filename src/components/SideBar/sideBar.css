@@ -1,0 +1,95 @@
+/* Estilos para la barra lateral */
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+.side-bar:hover {
+  width: 300px;
+}
+
+/* Estilos para el logo */
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* Mantener el título visible en ambas versiones */
+.logo .title {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 1;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.side-bar:hover .logo .title {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Estilos para los elementos de navegación */
+.nav-side {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-side li {
+  padding: 15px;
+}
+
+.nav-side a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-side a:hover {
+  color: #5b7ce9;
+}
+
+.nav-side svg {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.nav-side span {
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Mantener visible el texto en ambas versiones */
+.side-bar:hover .nav-side span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* En la versión reducida, mantener los íconos pero reducir el texto */
+.side-bar .nav-side span {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+
+/* Ajustes en la versión reducida */
+.side-bar:hover .nav-side svg {
+  transform: translateX(0);
+}
